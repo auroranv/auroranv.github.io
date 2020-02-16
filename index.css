@@ -1,0 +1,331 @@
+html,
+body {
+
+    /* background-color: white; */
+    background-color: rgba(239, 239, 239,1);
+    /* background-color:rgba(255, 255, 153, 1); */
+    width: 100%;
+    height: 150%;
+    /* overflow-x: hidden; */
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+em {
+  font-family: 'Space Mono', monospace;
+  font-weight: normal;
+  font-style: normal;
+  float: right;
+
+}
+/* em {
+  color: #00f7ff;
+  font-style: normal;
+} */
+
+a, a:active, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  /* color: grey; */
+  color: blue;
+}
+
+b, b:active, b:visited {
+  text-decoration: none;
+  color: blue;
+  font-weight: normal;
+}
+b:hover {
+
+}
+
+.myBtn{
+    color: #fff;
+    background: none;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    line-height: 50px;
+}
+#myBtn {
+  color: #fff;
+  background: none;
+  border: none;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.nonstick {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgba(200,0,255,0.3);
+  /* border-radius: 10px; */
+  /* border:2px solid white; */
+  padding: 7px;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  /* color: white; */
+  font-size: 20px;
+  line-height: 50px;
+}
+
+
+.menu{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 98vw;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+#home, #about, #contact{
+  color: #fff;
+  background: none;
+  border: none;
+  font-family: 'Space Mono', monospace;
+  font-weight: normal;
+  color: white;
+  font-size: 20px;
+  line-height: 50px;
+
+}
+
+#name{
+  float: right;
+  color: #fff;
+  background: none;
+  border: none;
+  font-family: 'Sporting Grotesque';
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.project {
+  position: relative;
+  top: 8vh;
+  width: 98vw;
+  /* height: 75px; */
+  height:auto;
+  background-color: none;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.title {
+  width:19vw;
+  padding-left: 2vw;
+  position: sticky;
+  top: 12vh;
+  font-family: 'Sporting Grotesque';
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.subtitle{
+  width:19vw;
+  padding-left: 2%;
+  position: sticky;
+  top: 18vh;
+  font-family: 'Space Mono', monospace;
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+#section1 {
+  /* height: 1080px;
+  width: 1920px; */
+  width: 100%;
+  height: auto;
+  background-color: none;
+}
+
+#section2 {
+  /* height: 2400px;
+  width: 1920px;*/
+  width: 100%;
+  height:auto;
+  /* height: 165%; */
+  /* background-color: yellow; */
+}
+#section2title{
+  position: relative;
+}
+#section2subtitle{
+  position: relative;
+}
+.book_ship{
+  position: relative;
+  top:0vh;
+  left:20vw;
+  width: 38vw;
+  height: auto;
+}
+
+#section3 {
+  width: 100%;
+  /* height: 94%; */
+  height: auto;
+  /* padding-bottom: 1vh; */
+  /* background-color: red; */
+}
+#section3title{
+	position: relative;
+}
+#section3subtitle{
+  position: relative;
+}
+.venice_site{
+  position: relative;
+  top:-4vh;
+  left:20vw;
+  width: 38vw;
+  height: auto;
+}
+
+#section4 {
+  width: 100%;
+  /* height: 88%; */
+  height: auto;
+  /* background-color: blue; */
+}
+#section4title{
+	position: relative;
+}
+#section4subtitle{
+  position: relative;
+}
+.book_arch {
+  position: relative;
+  width: 38vw;
+  top: -8vh;
+  /* 76vw */
+  height: auto;
+  left: 20vw;
+}
+
+#section6 {
+  width: 100%;
+  height: auto;
+}
+#section6title {
+  position: relative;
+}
+#section6subtitle {
+  position: relative;
+}
+
+
+#section20 {
+  width: 100%;
+  height: 100vh;
+  /* background-color: red; */
+}
+#section20title {
+  width:50vw;
+  padding-left: 2%;
+  position: relative;
+  top: 12vh;
+  font-family: 'Sporting Grotesque';
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+#section20subtitle{
+  width:50vw;
+  padding-left: 2%;
+  position: relative;
+  top: 18vh;
+  font-family: 'Space Mono', monospace;
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+#section20text{
+  width:50vw;
+  padding-left: 2%;
+  position: relative;
+  /* top: 80vh; */
+  font-family: 'Space Mono', monospace;
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.book_fine {
+  position: relative;
+  width: 38vw;
+  height: auto;
+  left: 20vw;
+}
+
+#section21 {
+  width: 100%;
+  height: 100vh;
+  /* background-color: red; */
+}
+#section21title {
+  width:30vw;
+  padding-left: 2%;
+  position: relative;
+  top: 12vh;
+  font-family: 'Sporting Grotesque';
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+#section21subtitle{
+  width:30vw;
+  padding-left: 2%;
+  position: relative;
+  top: 18vh;
+  font-family: 'Space Mono', monospace;
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+  font-size: 14px;
+  line-height: 14px;
+}
