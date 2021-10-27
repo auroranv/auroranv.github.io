@@ -374,7 +374,7 @@ b:hover {
   }
 
   .scroll {
-    left: 0;
+    left: 1vw;
     height: 4vh;
   font-size: 2.5vw;
   color: #F06449;
