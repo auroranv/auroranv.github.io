@@ -226,27 +226,31 @@ input[type='checkbox'] {
 
 .lbl-toggle {
   display: block;
-  font-weight: bold;
-  font-family: 'Apfel Grotezk', sans-serif;
-  font-size: 8vw;
-  line-height: 8vw;
-  text-align: left;
   padding: 1rem;
-  color: #F06449;
   background: white;
   cursor: pointer;
   border-radius: 7px;
   transition: all 0.25s ease-out;
 }
 
-b {
+h1 {
+  font-weight: bold;
+  font-family: 'Apfel Grotezk', sans-serif;
+  font-size: 8vw;
+  line-height: 8vw;
+  text-align: left;
+  color: #F06449;
+  display: inline;
+}
+
+h2 {
   font-family: 'Apfel Grotezk', sans-serif;
   font-weight: normal;
   font-size: 2vw;
   line-height: 8vw;
   float: right;
   color: white;
-
+  display: inline;
 }
 
 
@@ -331,11 +335,47 @@ b:hover {
 
 @media screen and (max-width:450px) {
 
-
-  .lbl-toggle {
-    background: yellow;
+  button {
+    font-size: 3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
 
+  .lbl-toggle {
+    background: #d9d9d9;
+  }
+
+  h2 {
+    /* font-family: 'Apfel Grotezk', sans-serif; */
+    /* font-weight: normal; */
+    font-size: 4vw;
+    line-height: 4vw;
+    float: left;
+    width: 100vw;
+    display: contents;
+  }
+
+  h1 {
+    display: block;
+  }
+
+  p {
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    /* padding-top: 3vh; */
+  }
+
+  .scroll {
+    left: 10vw;
+    height: 4vh;
+  font-size: 2.5vw;
+  color: #F06449;
+  text-transform: uppercase;
+  padding-top: 4vh;
+      padding-bottom: 2vh;
+  }
 
 }
 
