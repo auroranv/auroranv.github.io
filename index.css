@@ -232,23 +232,6 @@ img {
   transform: rotateX(180deg);
 }
 
-input[type='checkbox'] {
-  display: none; }
-
-.wrap-collabsible {
-  /* margin: 1.2rem 0;  */
-  overflow-x: hidden;
-}
-
-.lbl-toggle {
-  display: block;
-  padding: 1rem;
-  /* padding-top: 2rem; */
-  background: white;
-  cursor: pointer;
-  border-radius: 7px;
-  transition: all 0.25s ease-out;
-}
 
 h1 {
   font-weight: bold;
@@ -294,6 +277,35 @@ p {
   padding-left: 2vw;
   padding-right: 2vw;
   /* padding-top: 3vh; */
+}
+
+input[type='checkbox'] {
+  display: none; }
+
+.wrap-collabsible {
+  /* margin: 1.2rem 0;  */
+  overflow-x: hidden;
+}
+
+.lbl-toggle {
+  display: block;
+  padding: 1rem;
+  /* padding-top: 2rem; */
+  /* background: white; */
+
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+#tog0{
+    background-image: url(images/cities_4_1000.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
+#tog0:hover {
+  background-image: none;
 }
 
 .lbl-toggle:hover {
