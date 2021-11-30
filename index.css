@@ -415,16 +415,23 @@ b:hover {
     padding-right: 2vw;
   }
 
-
   .lbl-toggle {
-    background: #d3d3d3;
-    /* background: silver; */
+    /* background: #d3d3d3; */
+    /* background: black; */
+  }
+
+  #tog0{
+      background: linear-gradient(to left, transparent, black), url(images/dwellers_3.png);
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog0:hover {
+    background: black;
   }
 
   h2 {
-    /* font-family: 'Apfel Grotezk', sans-serif; */
-    /* font-weight: normal; */
-    font-size: 4vw;
+      font-size: 4vw;
     line-height: 4vw;
     float: left;
     width: 100vw;
