@@ -181,7 +181,6 @@ padding-top: 4vh;
   height: auto;
   width: auto;
   /* background-color: yellowgreen; */
-
 }
 
 ::-webkit-scrollbar{
@@ -298,15 +297,49 @@ input[type='checkbox'] {
   transition: all 0.25s ease-out;
 }
 
+/* ~~~~~~~~ toggle IMAGE BACKGROUNDS ~~~~~~~~~~ */
+
 #tog0{
-    background-image: url(images/cities_4_1000.png);
+    background-image: url(images/dwellers_3.png);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; 
+    background-size: cover;
 }
 #tog0:hover {
   background-image: none;
 }
+
+#tog1{
+    background-image: url(images/ikbenerniet_3.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog1:hover {
+  background-image: none;
+}
+
+#tog2{
+    background-image: url(images/lmgp7_6.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog2:hover {
+  background-image: none;
+}
+
+#tog3{
+    background-image: url(images/kijkvrij_3.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog3:hover {
+  background-image: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .lbl-toggle:hover {
   /* background: lightgrey; */
@@ -418,6 +451,18 @@ b:hover {
   text-transform: uppercase;
   padding-top: 4vh;
       padding-bottom: 2vh;
+  }
+
+  .gallery {
+    height: 52vh;
+  }
+
+  .image1 {
+    height: 45vh;
+  }
+
+  img {
+    height: 40vh;
   }
 
 }
