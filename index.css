@@ -173,6 +173,10 @@ padding-top: 4vh;
     padding-bottom: 2vh;
 }
 
+#swipe {
+  display: none;
+}
+
 .gallery {
   position: relative;
   display: block;
@@ -458,6 +462,14 @@ b:hover {
   text-transform: uppercase;
   padding-top: 4vh;
       padding-bottom: 2vh;
+  }
+
+  #scroll {
+    display: none;
+  }
+
+  #swipe {
+    display: flex;
   }
 
   .gallery {
