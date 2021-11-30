@@ -239,8 +239,8 @@ img {
 h1 {
   font-weight: bold;
   font-family: 'Apfel Grotezk', sans-serif;
-  font-size: 8vw;
-  line-height: 8vw;
+  font-size: 7.4vw;
+  line-height: 7.4vw;
   text-align: left;
   color: #F06449;
   display: inline;
@@ -314,7 +314,7 @@ input[type='checkbox'] {
 }
 
 #tog1{
-    background-image: url(images/ikbenerniet_3.jpg);
+    background-image: url(images/ikbenerniet_5.png);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
@@ -324,7 +324,7 @@ input[type='checkbox'] {
 }
 
 #tog2{
-    background-image: url(images/lmgp7_6.png);
+    background-image: url(images/lmgp7_8.png);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
@@ -334,12 +334,42 @@ input[type='checkbox'] {
 }
 
 #tog3{
-    background-image: url(images/kijkvrij_3.png);
+    background-image: url(images/kijkvrij_8.png);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
 }
 #tog3:hover {
+  background-image: none;
+}
+
+#tog4{
+    background-image: url(images/.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog4:hover {
+  background-image: none;
+}
+
+#tog5{
+    background-image: url(images/.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog5:hover {
+  background-image: none;
+}
+
+#tog6{
+    background-image: url(images/.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog6:hover {
   background-image: none;
 }
 
@@ -405,6 +435,9 @@ b:hover {
 
 
 /* ------------------------------------------ */
+
+/* ------ ADD ANOTHER STYLE, IN BETWEEN STAGE IS AWKWARD....------ */
+
 /* ------------- MOBILE -------------- */
 
 @media screen and (max-width:450px) {
@@ -420,7 +453,8 @@ b:hover {
   }
 
   #tog0{
-      background: linear-gradient(-30deg,transparent 20%, black), url(images/dwellers_3.png);
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/dwellers_3.png);
+      background-blend-mode: darken;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
       background-size: cover;
@@ -429,7 +463,8 @@ b:hover {
     background: black;
   }
   #tog1{
-      background: linear-gradient(-30deg,transparent 20%, black), url(images/ikbenerniet_3.jpg);
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/ikbenerniet_5.png);
+      background-blend-mode: darken;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
       background-size: cover;
@@ -438,16 +473,19 @@ b:hover {
     background: black;
   }
   #tog2{
-      background: linear-gradient(-30deg, transparent 20%, black), url(images/lmgp7_6.png);
+      background: linear-gradient(-30deg, transparent 20%, #000f56), url(images/lmgp7_8.png);
+      background-blend-mode: darken;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
       background-size: cover;
+
   }
   #tog2:hover {
     background: black;
   }
   #tog3{
-      background: linear-gradient(-30deg,transparent 20%, black), url(images/kijkvrij_3.png);
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/kijkvrij_8.png);
+      background-blend-mode: darken;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
       background-size: cover;
@@ -456,7 +494,8 @@ b:hover {
     background: black;
   }
   #tog4{
-      background: linear-gradient(-30deg,transparent 20%, black), url(images/);
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/);
+      background-blend-mode: darken;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
       background-size: cover;
@@ -465,12 +504,24 @@ b:hover {
     background: black;
   }
   #tog5{
-      background: linear-gradient(-30deg, transparent 20%, black), url(images/);
+      background: linear-gradient(-30deg, transparent 20%, #000f56), url(images/);
+      background-blend-mode: darken;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
       background-size: cover;
   }
   #tog5:hover {
+    background: black;
+  }
+
+  #tog6{
+      background: linear-gradient(-30deg, transparent 20%, #000f56), url(images/);
+      background-blend-mode: darken;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog6:hover {
     background: black;
   }
 
@@ -484,6 +535,7 @@ b:hover {
 
   h1 {
     display: block;
+    /* text-shadow: 0px 0px 4px rgba(0,0,0, 0.3); */
   }
 
   p {
