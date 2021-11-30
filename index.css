@@ -419,18 +419,58 @@ b:hover {
     padding-right: 2vw;
   }
 
-  .lbl-toggle {
-    /* background: #d3d3d3; */
-    /* background: black; */
-  }
-
   #tog0{
-      background: linear-gradient(to left, transparent, black), url(images/dwellers_3.png);
+      background: linear-gradient(-30deg,transparent 20%, black), url(images/dwellers_3.png);
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
       background-size: cover;
   }
   #tog0:hover {
+    background: black;
+  }
+  #tog1{
+      background: linear-gradient(-30deg,transparent 20%, black), url(images/ikbenerniet_3.jpg);
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog1:hover {
+    background: black;
+  }
+  #tog2{
+      background: linear-gradient(-30deg, transparent 20%, black), url(images/lmgp7_6.png);
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog2:hover {
+    background: black;
+  }
+  #tog3{
+      background: linear-gradient(-30deg,transparent 20%, black), url(images/kijkvrij_3.png);
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog3:hover {
+    background: black;
+  }
+  #tog4{
+      background: linear-gradient(-30deg,transparent 20%, black), url(images/);
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog4:hover {
+    background: black;
+  }
+  #tog5{
+      background: linear-gradient(-30deg, transparent 20%, black), url(images/);
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog5:hover {
     background: black;
   }
 
