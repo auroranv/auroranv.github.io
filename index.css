@@ -304,7 +304,7 @@ input[type='checkbox'] {
 /* ~~~~~~~~ toggle IMAGE BACKGROUNDS ~~~~~~~~~~ */
 
 #tog0{
-    background-image: url(images/dwellers_3.png);
+    background-image: url(images/dwellers_4.gif);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
@@ -344,7 +344,7 @@ input[type='checkbox'] {
 }
 
 #tog4{
-    background-image: url(images/.png);
+    background-image: url(images/level_6.gif);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
@@ -354,7 +354,7 @@ input[type='checkbox'] {
 }
 
 #tog5{
-    background-image: url(images/.png);
+    background-image: url(images/occupants_1.png);
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
@@ -494,7 +494,7 @@ b:hover {
     background: black;
   }
   #tog4{
-      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/);
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/level_6.gif);
       background-blend-mode: darken;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
@@ -504,7 +504,7 @@ b:hover {
     background: black;
   }
   #tog5{
-      background: linear-gradient(-30deg, transparent 20%, #000f56), url(images/);
+      background: linear-gradient(-30deg, transparent 20%, #000f56), url(images/occupants_1.png);
       background-blend-mode: darken;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
