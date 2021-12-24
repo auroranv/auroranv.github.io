@@ -214,7 +214,7 @@ h1 {
   font-weight: bold;
   font-family: 'Apfel Grotezk', sans-serif;
   font-size: 7.4vw;
-  line-height: 6.6vw;
+  line-height: 7.4vw;
   text-align: left;
   color: #F06449;
   display: inline;
@@ -225,10 +225,10 @@ h2 {
   font-family: 'Apfel Grotezk', sans-serif;
   font-weight: normal;
   font-size: 2vw;
-  /* line-height: 8vw; */
-  /* float: right; */
+  line-height: 8vw;
+  float: right;
   color: white;
-  /* display: inline; */
+  display: inline;
 }
 
 .description {
@@ -281,8 +281,7 @@ input[type='checkbox'] {
 
 .lbl-toggle {
   display: block;
-  height: 26vh;
-  padding: 1.2rem;
+  padding: 1rem;
   cursor: pointer;
   border-radius: 7px;
   transition: all 0.25s ease-out;
@@ -309,6 +308,26 @@ input[type='checkbox'] {
   background-image: none;
 }
 
+#tog1{
+    background-image: url(images/ikbenerniet_5.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog1:hover {
+  background-image: none;
+}
+
+
+#tog3{
+    background-image: url(images/kijkvrij_9.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog3:hover {
+  background-image: none;
+}
 
 #tog4{
     background-image: url(images/level_6.gif);
@@ -319,6 +338,78 @@ input[type='checkbox'] {
 #tog4:hover {
   background-image: none;
 }
+
+#tog5{
+    background-image: url(images/occupants_1.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog5:hover {
+  background-image: none;
+}
+
+#tog6{
+    background-image: url(images/binnentuin_4.gif);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog6:hover {
+  background-image: none;
+}
+
+#tog7{
+    background-image: url(images/quilts_9.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog7:hover {
+  background-image: none;
+}
+
+#tog8{
+    background-image: url(images/secret_1.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog8:hover {
+  background-image: none;
+}
+
+#tog9{
+    background-image: url(images/borders_9.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog9:hover {
+  background-image: none;
+}
+
+#tog10{
+    background-image: url(images/journey_4.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog10:hover {
+  background-image: none;
+}
+
+#tog11{
+    background-image: url(images/babylon_1.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog11:hover {
+  background-image: none;
+}
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .lbl-toggle:hover {
@@ -401,12 +492,8 @@ b:hover {
     padding-right: 2vw;
   }
 
-  .lbl-toggle {
-    height: 30vh;
-  }
-
   #tog01{
-      background: linear-gradient(-30deg,transparent 40%, #000f56), url(images/insitu_4.jpg);
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/insitu_4.jpg);
       background-blend-mode: darken;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
@@ -417,7 +504,7 @@ b:hover {
   }
 
   #tog0{
-      background: linear-gradient(-30deg,transparent 40%, #000f56), url(images/dwellers_4.gif);
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/dwellers_4.gif);
       background-blend-mode: darken;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
@@ -426,8 +513,29 @@ b:hover {
   #tog0:hover {
     background: black;
   }
+  #tog1{
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/ikbenerniet_5.png);
+      background-blend-mode: darken;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog1:hover {
+    background: black;
+  }
+
+  #tog3{
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/kijkvrij_9.jpg);
+      background-blend-mode: darken;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog3:hover {
+    background: black;
+  }
   #tog4{
-      background: linear-gradient(-30deg,transparent 40%, #000f56), url(images/level_6.gif);
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/level_6.gif);
       background-blend-mode: darken;
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
@@ -436,10 +544,86 @@ b:hover {
   #tog4:hover {
     background: black;
   }
+  #tog5{
+      background: linear-gradient(-30deg, transparent 20%, #000f56), url(images/occupants_1.png);
+      background-blend-mode: darken;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog5:hover {
+    background: black;
+  }
+
+  #tog6{
+      background: linear-gradient(-30deg, transparent 20%, #000f56), url(images/binnentuin_4.gif);
+      background-blend-mode: darken;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog6:hover {
+    background: black;
+  }
+
+  #tog7{
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/quilts_9.png);
+      background-blend-mode: darken;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog7:hover {
+    background: black;
+  }
+
+  #tog8{
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/secret_1.png);
+      background-blend-mode: darken;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog8:hover {
+    background: black;
+  }
+
+  #tog9{
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/borders_9.png);
+      background-blend-mode: darken;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog9:hover {
+    background: black;
+  }
+
+  #tog10{
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/journey_4.png);
+      background-blend-mode: darken;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog10:hover {
+    background: black;
+  }
+
+  #tog11{
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/babylon_1.png);
+      background-blend-mode: darken;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog11:hover {
+    background: black;
+  }
 
   h2 {
       font-size: 4vw;
-    line-height: 10vw;
+    line-height: 4vw;
     float: left;
     width: 100vw;
     display: contents;
@@ -447,9 +631,7 @@ b:hover {
 
   h1 {
     display: block;
-    font-size: 14vw;
-    line-height: 12vw;
-    /* display: inline; */
+    /* text-shadow: 0px 0px 4px rgba(0,0,0, 0.3); */
   }
 
   p {
@@ -498,12 +680,6 @@ b:hover {
 
   img {
     height: 40vh;
-  }
-
-  .credits {
-    font-size: 3vw;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
   }
 
 }
