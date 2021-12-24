@@ -406,6 +406,7 @@ input[type='checkbox'] {
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
 }
+
 #tog12:hover {
   background-image: none;
 }
