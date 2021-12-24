@@ -288,15 +288,6 @@ input[type='checkbox'] {
 }
 
 /* ~~~~~~~~ toggle IMAGE BACKGROUNDS ~~~~~~~~~~ */
-#tog01{
-    background-image: url(images/insitu_4.jpg);
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-}
-#tog01:hover {
-  background-image: none;
-}
 
 #tog0{
     background-image: url(images/dwellers_4.gif);
@@ -409,6 +400,15 @@ input[type='checkbox'] {
   background-image: none;
 }
 
+#tog12{
+    background-image: url(images/spheres_1.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+#tog12:hover {
+  background-image: none;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -490,17 +490,6 @@ b:hover {
     font-size: 3vw;
     padding-left: 2vw;
     padding-right: 2vw;
-  }
-
-  #tog01{
-      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/insitu_4.jpg);
-      background-blend-mode: darken;
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: cover;
-  }
-  #tog01:hover {
-    background: black;
   }
 
   #tog0{
@@ -620,6 +609,18 @@ b:hover {
   #tog11:hover {
     background: black;
   }
+
+  #tog12{
+      background: linear-gradient(-30deg,transparent 20%, #000f56), url(images/spheres_1.png);
+      background-blend-mode: darken;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+  }
+  #tog12:hover {
+    background: black;
+  }
+
 
   h2 {
       font-size: 4vw;
