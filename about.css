@@ -44,8 +44,8 @@ purple: #832161
   width: auto;
 }
 
-.intro-wrap {
-}
+/* .intro-wrap {
+} */
 
 .header {
   top: 0;
@@ -203,7 +203,7 @@ h2 {
 
 /* -----------MOBILE--------------- */
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
   button {
     font-size: 3vw;
     padding-left: 2vw;
@@ -265,8 +265,10 @@ h2 {
 
   img {
     object-fit: cover;
-    height: inherit;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    /* height: inherit; */
     float: right;
   }
 }
