@@ -211,6 +211,7 @@ iframe {
 video {
   transform: rotateX(180deg);
   margin: 10px;
+  align-self: center;
 }
 
 img {
