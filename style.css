@@ -210,7 +210,10 @@ iframe {
 
 video {
   transform: rotateX(180deg);
-  margin-right: 10px;
+  /* margin-right: 10px; */
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   align-self: center;
 }
 
@@ -218,7 +221,10 @@ img {
   /* object-fit: cover; */
   object-fit: contain;
   height: 60vh;
-  margin: 10px;
+  /* margin: 10px; */
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   transform: rotateX(180deg);
 }
 
@@ -946,6 +952,13 @@ input[type="checkbox"] {
     margin: 0;
     padding-top: 20px;
     /* margin-top: 10px; */
+  }
+
+  video {
+    height: 38vh;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 
   .credits {
