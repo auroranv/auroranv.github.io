@@ -210,7 +210,7 @@ iframe {
 
 video {
   transform: rotateX(180deg);
-  margin: 10px;
+  margin-right: 10px;
   align-self: center;
 }
 
@@ -943,6 +943,9 @@ input[type="checkbox"] {
 
   img {
     height: 40vh;
+    margin: 0;
+    padding-top: 20px;
+    /* margin-top: 10px; */
   }
 
   .credits {
