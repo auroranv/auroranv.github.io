@@ -322,6 +322,16 @@ input[type="checkbox"] {
 
 /* ~~~~~~~~ toggle IMAGE BACKGROUNDS ~~~~~~~~~~ */
 
+#tog21 {
+  background-image: url(images/climateoases_2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#tog21:hover {
+  background-image: none;
+}
+
 #tog18 {
   background-image: url(images/SAUNA_NIGHTS_b.png);
   background-position: center;
