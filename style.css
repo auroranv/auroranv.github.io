@@ -9,12 +9,9 @@ body {
   box-sizing: border-box;
 }
 
-/* COLOUR SCHEME FOR REF
-lightgrey
-yellow: #FDC835
-coral: #F06449
-purple: #832161
- */
+:root {
+  --bg-grey: rgb(35 35 35);
+}
 
 /* ---------------FONTS--------------- */
 
@@ -25,13 +22,26 @@ purple: #832161
 
 @font-face {
   font-family: "Apfel Grotezk";
-  font-weight: bold;
+  font-weight: 200;
+  src: url(fonts/ApfelGrotezk-Regular.otf);
+}
+
+@font-face {
+  font-family: "Apfel Grotezk";
+  font-weight: 400;
+  src: url(fonts/ApfelGrotezk-Mittel.otf);
+}
+
+@font-face {
+  font-family: "Apfel Grotezk";
+  font-weight: 600;
   src: url(fonts/ApfelGrotezk-Fett.otf);
 }
 
 @font-face {
   font-family: "Apfel Grotezk";
-  src: url(fonts/ApfelGrotezk-Regular.otf);
+  font-weight: 800;
+  src: url(fonts/ApfelGrotezk-Satt.otf);
 }
 
 @font-face {
@@ -48,8 +58,10 @@ purple: #832161
 .wrapper {
   margin: 0;
   padding: 0;
-  height: auto;
+  /* height: auto; */
+  height: 100vh;
   width: auto;
+  background: rgb(35, 35, 35);
 }
 
 .body-wrapper {
@@ -58,7 +70,7 @@ purple: #832161
   height: auto;
   width: auto;
   overflow-x: hidden;
-  background: linen;
+  background: rgb(35, 35, 35);
 }
 
 .header {
@@ -67,38 +79,67 @@ purple: #832161
   height: auto;
   width: auto;
   position: sticky;
-  /* display: flex; */
   display: flow-root;
-  /* justify-content: flex-end; */
-  /* background-color: #FDC835; */
-  /* background-color: lightgrey; */
-  /* background-color: silver; */
-  background-color: linen;
-  padding: 2vw;
+  background-color: rgb(35, 35, 35);
+  padding: 1vw;
   z-index: 100;
 }
 
 button {
+}
+
+.header-link {
   font-family: "Apfel Grotezk", sans-serif;
-  /* font-family: 'Basteleur Bold'; */
-  font-size: 1.4vw;
-  color: black;
+  font-weight: 200;
+  font-size: 1.1vw;
+  text-transform: uppercase;
+  color: whitesmoke;
   background: none;
   border: none;
-  padding-left: 1vw;
-  padding-right: 1vw;
+}
+
+/* proj-tag is for project disciplines/areas */
+.proj-tag {
+  font-size: 1vw;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-left: 0.6vw;
+  padding-right: 0.6vw;
+  padding-top: 0.2vw;
+  padding-bottom: 0.2vw;
+  margin-left: 0.3vw;
+  margin-right: 0.3vw;
+  background: rgb(35, 35, 35);
+  border-radius: 8rem;
+}
+
+/* meta-tag is for metadata info, like the date, the fact that its a collection of projects etc */
+.meta-tag {
+  font-size: 1vw;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+  padding-left: 0.6vw;
+  padding-right: 0.6vw;
+  padding-top: 0.2vw;
+  padding-bottom: 0.2vw;
+  margin-left: 0.3vw;
+  margin-right: 0.3vw;
+  background: rgb(175, 175, 175);
+  border-radius: 8rem;
 }
 
 #name {
   float: left;
   font-family: "Apfel Grotezk", sans-serif;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 200;
 }
 #projects,
 #cv,
 #about {
   float: right;
+  padding-left: 2vw;
 }
 
 a {
@@ -126,25 +167,6 @@ iframe {
 
 #scroll {
   display: none;
-  /* left: 3vw;
- 
-  height: 4vh;
-  width: fit-content;
-
-  margin: 0;
-  position: relative;
-
-  display: none;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  font-family: "Apfel Grotezk", sans-serif;
-  font-size: 1.2vw;
-
-  color: grey;
-  text-transform: uppercase;
-  padding-top: 4vh;
-  padding-bottom: 2vh; */
 }
 
 #swipe {
@@ -164,25 +186,21 @@ iframe {
 ::-webkit-scrollbar {
   /* ---NOTE: for the rest of the scrollbar formatting to work, there has to be at least one attribute here under general scrollbar. */
   /* width: 2vh; */
-  background-color: linen;
-  width: 10px;
-  height: 10px;
+  background-color: rgb(0, 0, 0);
+  width: 8px;
+  height: 8px;
 }
 /* ::-webkit-scrollbar-button {
 } */
 ::-webkit-scrollbar-thumb {
   /* background: #F06449; */
   /* background: none; */
-  background: black;
+  background: rgb(175, 175, 175);
   border-radius: 50px;
   /* border: 1px solid whitesmoke; */
 }
 .image1::-webkit-scrollbar-track {
-  background-image: linear-gradient(
-    to right,
-    rgb(220, 211, 203),
-    rgb(220, 211, 203)
-  );
+  background-image: linear-gradient(to right, rgb(24, 24, 24), rgb(24, 24, 24));
   border-radius: 50px;
 }
 
@@ -235,37 +253,33 @@ iframe {
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: 400;
   font-family: "Apfel Grotezk", sans-serif;
   /* font-family: "MAZIUS REVIEW 20.09 Ex italic"; */
   /* font-weight: normal; */
-  font-size: 7.4vw;
-  line-height: 7.4vw;
+  font-size: 1.5vw;
+  line-height: 1.5vw;
   text-align: left;
   /* color: #F06449; */
-  color: black;
-  display: inline;
+  color: whitesmoke;
+  display: inline-flex;
+  align-items: center;
 }
 
 h2 {
   font-family: "Apfel Grotezk", sans-serif;
-  font-weight: normal;
-  font-size: 1.8vw;
-  line-height: 8vw;
+  font-weight: 200;
+  font-size: 1.5vw;
+  line-height: 1.5vw;
   float: right;
-  color: black;
-  display: inline;
+  color: whitesmoke;
+  display: inline-flex;
+  align-items: center;
 }
 
 .description {
   width: 95vw;
   display: flex;
-  font-family: "Apfel Grotezk", sans-serif;
-  font-size: 1.4vw;
-  line-height: 1.6vw;
-  color: black;
-  padding-left: 2vw;
-  padding-right: 2vw;
   padding-bottom: 4vh;
 }
 
@@ -273,9 +287,10 @@ p {
   width: 47vw;
   /* float:left; */
   font-family: "Apfel Grotezk", sans-serif;
-  font-size: 1.4vw;
-  line-height: 1.6vw;
-  color: black;
+  font-weight: 200;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
+  color: gainsboro;
   padding-left: 1vw;
   padding-right: 1vw;
   /* padding-top: 3vh; */
@@ -283,7 +298,6 @@ p {
 
 span {
   font-family: "Apfel Grotezk", sans-serif;
-  font-size: 1.4vw;
   color: #f06449;
 }
 
@@ -306,13 +320,24 @@ input[type="checkbox"] {
 }
 
 .gradient {
-  background-image: linear-gradient(-30deg, #f9f0e600 25%, #f9f0e6 70%);
+  background-image: linear-gradient(
+    -30deg,
+    rgba(35, 35, 35, 0.25) 25%,
+    rgb(35, 35, 35, 0.25) 75%
+  );
   padding: 1rem;
   margin: 0;
   width: inherit;
   height: inherit;
   display: block;
+  backdrop-filter: blur(30px);
+  align-content: center;
   /* border-radius: 7px; */
+  /* mix-blend-mode: multiply; */
+}
+
+.gradient:hover {
+  backdrop-filter: none;
 }
 
 .lbl-toggle {
@@ -327,6 +352,16 @@ input[type="checkbox"] {
 
 /* ~~~~~~~~ toggle IMAGE BACKGROUNDS ~~~~~~~~~~ */
 
+#tog22 {
+  background-image: url(images/forecast_4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#tog22:hover {
+  /* background-image: none; */
+}
+
 #tog21 {
   background-image: url(images/climateoases_2.png);
   background-position: center;
@@ -334,7 +369,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog21:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog18 {
@@ -344,7 +379,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog18:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 #tog19 {
   background-image: url(images/awakenings_3.png);
@@ -353,7 +388,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog19:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 #tog20 {
   background-image: url(images/insitu_4.jpg);
@@ -362,7 +397,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog20:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog01 {
@@ -372,7 +407,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog01:hover {
-  background-image: none;
+  /* background-image: none; */
   /* filter:blur(20px); */
 }
 
@@ -383,7 +418,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog0:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog1 {
@@ -393,7 +428,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog1:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog2 {
@@ -404,7 +439,7 @@ input[type="checkbox"] {
 }
 
 #tog2:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog3 {
@@ -414,7 +449,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog3:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog4 {
@@ -424,7 +459,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog4:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog5 {
@@ -434,7 +469,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog5:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog6 {
@@ -444,7 +479,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog6:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog7 {
@@ -454,7 +489,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog7:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog8 {
@@ -464,7 +499,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog8:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog9 {
@@ -474,7 +509,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog9:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog10 {
@@ -484,7 +519,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog10:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog11 {
@@ -494,7 +529,7 @@ input[type="checkbox"] {
   background-size: cover;
 }
 #tog11:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog12 {
@@ -505,7 +540,7 @@ input[type="checkbox"] {
 }
 
 #tog12:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog13 {
@@ -516,7 +551,7 @@ input[type="checkbox"] {
 }
 
 #tog13:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog14 {
@@ -527,7 +562,7 @@ input[type="checkbox"] {
 }
 
 #tog14:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog15 {
@@ -538,7 +573,7 @@ input[type="checkbox"] {
 }
 
 #tog15:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog16 {
@@ -549,7 +584,7 @@ input[type="checkbox"] {
 }
 
 #tog16:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 #tog17 {
@@ -560,7 +595,7 @@ input[type="checkbox"] {
 }
 
 #tog17:hover {
-  background-image: none;
+  /* background-image: none; */
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -568,7 +603,7 @@ input[type="checkbox"] {
 .lbl-toggle:hover {
   /* background: lightgrey; */
   /* background: silver; */
-  background: linen;
+  background: rgb(35, 35, 35);
   /* color: white; */
   /* background: #832161; */
 }
@@ -610,13 +645,13 @@ input[type="checkbox"] {
   border-bottom-left-radius: 0;
   /* background-color: lightgrey; */
   /* background-color: #832161; */
-  background-color: linen;
+  background-color: rgb(35, 35, 35);
 }
 
 .collapsible-content .content-inner {
   /* background: lightgrey; */
   /* background: #832161; */
-  background-color: linen;
+  background-color: rgb(35, 35, 35);
   /* border-bottom: 1px solid rgba(0, 105, 255, .45); */
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -635,312 +670,91 @@ input[type="checkbox"] {
 /* ------------- MOBILE -------------- */
 
 @media screen and (max-width: 700px) {
-  /* .header {
-    background-color: white;
-  } */
-
   .header {
     top: 0;
     left: 0;
     height: auto;
     width: auto;
     position: sticky;
-    /* display: flex; */
     display: flow-root;
-    /* justify-content: flex-end; */
-    /* background-color: #FDC835; */
-    /* background-color: lightgrey; */
-    /* background-color: silver; */
-    background-color: linen;
     padding: 2vw;
     z-index: 100;
   }
 
-  button {
-    font-size: 3vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-  }
-
-  #tog01 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/insitu_4.jpg);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog01:hover {
-    background: black;
-  }
-
-  #tog0 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/dwellers_4.gif);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog0:hover {
-    background: black;
-  }
-  #tog1 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/ikbenerniet_5.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog1:hover {
-    background: black;
-  }
-
-  #tog2 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/cities_2.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog2:hover {
-    background: black;
-  }
-
-  #tog3 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/kijkvrij_9.jpg);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog3:hover {
-    background: black;
-  }
-  #tog4 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/level_6.gif);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog4:hover {
-    background: black;
-  }
-  #tog5 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/occupants_1.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog5:hover {
-    background: black;
-  }
-
-  #tog6 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/binnentuin_4.gif);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog6:hover {
-    background: black;
-  }
-
-  #tog7 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/quilts_9.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog7:hover {
-    background: black;
-  }
-
-  #tog8 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/secret_1.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog8:hover {
-    background: black;
-  }
-
-  #tog9 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/borders_9.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog9:hover {
-    background: black;
-  }
-
-  #tog10 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/journey_4.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog10:hover {
-    background: black;
-  }
-
-  #tog11 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/babylon_1.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog11:hover {
-    background: black;
-  }
-
-  #tog12 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/spheres_1.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog12:hover {
-    background: black;
-  }
-
-  #tog13 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/present_3.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog13:hover {
-    background: black;
-  }
-
-  #tog14 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/forecast_4.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog14:hover {
-    background: black;
-  }
-
-  #tog15 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/happiness_6.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog15:hover {
-    background: black;
-  }
-
-  #tog16 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/broadsheet_3.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog16:hover {
-    background: black;
-  }
-
-  #tog17 {
-    background: linear-gradient(-30deg, transparent 20%, #000f56),
-      url(images/new_order_1.png);
-    background-blend-mode: darken;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-  }
-  #tog17:hover {
-    background: black;
-  }
-
-  h2 {
-    font-size: 4vw;
-    line-height: 4vw;
-    float: left;
-    width: 100vw;
-    display: contents;
+  .header-link {
+    font-size: 2.5vw;
   }
 
   h1 {
     display: block;
-    /* text-shadow: 0px 0px 4px rgba(0,0,0, 0.3); */
+    font-size: 4vw;
+  }
+
+  h2 {
+    width: auto;
+    justify-content: right;
+    margin-top: 4vw;
+  }
+
+  .proj-tag {
+    font-size: 2.5vw;
+    padding-left: 1.6vw;
+    padding-right: 1.6vw;
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    border-radius: 8rem;
+  }
+
+  .meta-tag {
+    font-size: 2.5vw;
+    padding-left: 1.6vw;
+    padding-right: 1.6vw;
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    border-radius: 8rem;
   }
 
   p {
-    font-size: 3.3vw;
-    line-height: 3.5vw;
+    font-size: 2.5vw;
+    line-height: 3vw;
     padding-left: 2vw;
     padding-right: 2vw;
+    width: 94vw;
     /* padding-top: 3vh; */
-  }
-
-  span {
-    font-size: 3.3vw;
   }
 
   #swipe {
     display: none;
-    /* display: flex;
-    left: 1vw;
-    height: 4vh;
-    font-size: 3vw;
-    color: grey;
-    text-transform: uppercase;
-    padding-top: 4vh;
-    padding-bottom: 2vh;
-    width: fit-content;
-    margin: 0;
-    position: relative;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    font-family: "Apfel Grotezk", sans-serif; */
   }
 
   #scroll {
     display: none;
   }
 
+  .gradient {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    flex-direction: column;
+  }
+
   .description {
     padding-bottom: 20px;
+    flex-direction: column;
   }
 
   .gallery {
     height: 42vh;
+  }
+
+  ::-webkit-scrollbar {
+    /* background-color: rgb(0, 0, 0); */
+    width: 4px;
+    height: 4px;
   }
 
   .image1 {
