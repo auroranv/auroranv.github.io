@@ -117,21 +117,20 @@ span {
 }
 
 img {
-  /* object-fit: cover; */
   object-fit: cover;
-  /* left: 40vw; */
+  width: inherit;
   height: 100vh;
-  float: right;
+  /* float: right; */
 }
 
 .image {
   z-index: -100;
-  display: flex;
-  justify-content: center;
-  float: right;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* float: right; */
   width: 53vw;
-  position: fixed;
-  right: 0;
+  /* position: fixed; */
+  /* right: 0; */
 }
 
 .intro {
@@ -156,8 +155,8 @@ img {
   display: table;
   font-family: "Apfel Grotezk", sans-serif;
   font-weight: 200;
-  font-size: 1.3vw;
-  line-height: 1.6vw;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
   color: whitesmoke;
 }
 
@@ -165,8 +164,8 @@ img {
   float: left;
   width: 10vw;
   height: auto;
-  font-size: 1.3vw;
-  line-height: 1.6vw;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
   color: #f06449;
   /* position: absolute; */
   display: flex;
@@ -208,7 +207,7 @@ h1 {
 
   .intro {
     width: 100vw;
-    height: auto;
+    /* height: auto; */
   }
 
   .intro-wrap {
@@ -249,16 +248,6 @@ h1 {
     padding-right: 4vw;
   }
 
-  .image {
-    width: 100vw;
-    height: auto;
-    right: 0;
-    padding: 0;
-    position: relative;
-    background: yellow;
-    flex-grow: 1;
-  }
-
   img {
     object-fit: cover;
     height: 100%;
@@ -266,5 +255,16 @@ h1 {
     /* object-fit: cover; */
     /* height: inherit; */
     float: right;
+  }
+
+  .image {
+    width: 100vw;
+    display: flex;
+    height: 60vh;
+    /* right: 0; */
+    /* padding: 0; */
+    /* position: relative; */
+    /* background: yellow; */
+    flex-grow: 1;
   }
 }
