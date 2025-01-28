@@ -347,16 +347,6 @@ input[type="checkbox"] {
   backdrop-filter: none;
 }
 
-.lbl-toggle {
-  /* background-image: linear-gradient(-30deg, transparent 20%, yellow); */
-
-  display: block;
-  padding: 0;
-  cursor: pointer;
-  /* border-radius: 7px; */
-  transition: all 0.25s ease-out;
-}
-
 /* ~~~~~~~~ toggle IMAGE BACKGROUNDS ~~~~~~~~~~ */
 
 #tog22 {
@@ -606,6 +596,15 @@ input[type="checkbox"] {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.lbl-toggle {
+  /* background-image: linear-gradient(-30deg, transparent 20%, yellow); */
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  /* border-radius: 7px; */
+  transition: all 0.25s ease-out;
+}
 
 .lbl-toggle:hover {
   /* background: lightgrey; */
