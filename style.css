@@ -92,7 +92,8 @@ button {
 .header-link {
   font-family: "Apfel Grotezk", sans-serif;
   font-weight: 200;
-  font-size: 1.1vw;
+  /* font-size: 1.1vw; */
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: whitesmoke;
   background: none;
@@ -101,13 +102,14 @@ button {
 
 /* proj-tag is for project disciplines/areas */
 .proj-tag {
-  font-size: 1vw;
+  font-size: 1.3rem;
+  letter-spacing: 0.06rem;
   font-weight: 200;
   text-transform: uppercase;
-  padding-left: 0.6vw;
-  padding-right: 0.6vw;
-  padding-top: 0.2vw;
-  padding-bottom: 0.2vw;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
   margin-left: 0.3vw;
   margin-right: 0.3vw;
   background: var(--bg-grey);
@@ -116,14 +118,15 @@ button {
 
 /* meta-tag is for metadata info, like the date, the fact that its a collection of projects etc */
 .meta-tag {
-  font-size: 1vw;
+  font-size: 1.3rem;
+  letter-spacing: 0.06rem;
   font-weight: 400;
   color: black;
   text-transform: uppercase;
-  padding-left: 0.6vw;
-  padding-right: 0.6vw;
-  padding-top: 0.2vw;
-  padding-bottom: 0.2vw;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
   margin-left: 0.3vw;
   margin-right: 0.3vw;
   background: rgb(175, 175, 175);
@@ -256,10 +259,8 @@ iframe {
 h1 {
   font-weight: 400;
   font-family: "Apfel Grotezk", sans-serif;
-  /* font-family: "MAZIUS REVIEW 20.09 Ex italic"; */
-  /* font-weight: normal; */
-  font-size: 1.5vw;
-  line-height: 1.5vw;
+  font-size: 2rem;
+  line-height: 2rem;
   text-align: left;
   /* color: #F06449; */
   color: whitesmoke;
@@ -269,13 +270,14 @@ h1 {
 
 h2 {
   font-family: "Apfel Grotezk", sans-serif;
-  font-weight: 200;
+  /* font-weight: 200;
   font-size: 1.5vw;
-  line-height: 1.5vw;
+  line-height: 1.5vw; */
   float: right;
   color: whitesmoke;
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .description {
@@ -289,8 +291,8 @@ p {
   /* float:left; */
   font-family: "Apfel Grotezk", sans-serif;
   font-weight: 200;
-  font-size: 1.2vw;
-  line-height: 1.5vw;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
   color: gainsboro;
   padding-left: 1vw;
   padding-right: 1vw;
@@ -304,7 +306,8 @@ span {
 
 .credits {
   font-family: "Apfel Grotezk", sans-serif;
-  font-size: 1.2vw;
+  font-weight: 200;
+  font-size: 1.2rem;
   color: darkgrey;
   text-align: center;
   padding-top: 3vh;
@@ -674,6 +677,48 @@ input[type="checkbox"] {
 /* ------------------------------------------ */
 
 /* ------ ADD ANOTHER STYLE, IN BETWEEN STAGE IS AWKWARD....------ */
+/* ------------- WINDOW -------------- */
+
+@media screen and (max-width: 1500px) {
+  body {
+    background: yellow;
+  }
+  .header-link {
+    font-size: 1.3rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    margin-top: 2vw;
+  }
+
+  .proj-tag {
+    font-size: 1.15rem;
+    letter-spacing: 0.04rem;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+  }
+  .meta-tag {
+    font-size: 1.15rem;
+    letter-spacing: 0.04rem;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+}
+
+/* ------------------------------------------ */
 
 /* ------------- MOBILE -------------- */
 
@@ -690,45 +735,48 @@ input[type="checkbox"] {
   }
 
   .header-link {
-    font-size: 2.5vw;
+    font-size: 0.9rem;
   }
 
   h1 {
     display: block;
-    font-size: 4vw;
+    font-size: 1.6rem;
   }
 
   h2 {
     width: auto;
     justify-content: right;
-    margin-top: 4vw;
+    margin-top: 2vw;
+    /* flex-wrap: wrap; */
   }
 
   .proj-tag {
-    font-size: 2.5vw;
-    padding-left: 1.6vw;
-    padding-right: 1.6vw;
-    padding-top: 1.2vw;
-    padding-bottom: 1.2vw;
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
+    font-size: 0.9rem;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    margin-top: 0.5em;
     border-radius: 8rem;
   }
 
   .meta-tag {
-    font-size: 2.5vw;
-    padding-left: 1.6vw;
-    padding-right: 1.6vw;
-    padding-top: 1.2vw;
-    padding-bottom: 1.2vw;
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
+    font-size: 0.9rem;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    margin-top: 0.5em;
     border-radius: 8rem;
   }
 
   p {
-    font-size: 2.5vw;
-    line-height: 3vw;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
     padding-left: 2vw;
     padding-right: 2vw;
     width: 94vw;
@@ -785,7 +833,7 @@ input[type="checkbox"] {
 
   .credits {
     font-family: "Apfel Grotezk", sans-serif;
-    font-size: 3vw;
+    font-size: 1rem;
     color: darkgrey;
     text-align: center;
     padding-top: 3vh;
