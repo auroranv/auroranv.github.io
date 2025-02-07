@@ -80,7 +80,6 @@ body {
   height: auto;
   width: auto;
   position: sticky;
-  /* display: flow-root; */
   display: flex;
   justify-content: space-between;
   background-color: var(--bg-grey);
@@ -88,23 +87,39 @@ body {
   z-index: 100;
 }
 
-button {
+.header-links-group {
+  display: inline;
 }
 
-.header-links-group {
-  /* width: auto;
-  height: auto; */
-  display: inline;
+button {
 }
 
 .header-link {
   font-family: "Apfel Grotezk", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.1rem;
   text-transform: uppercase;
   color: whitesmoke;
   background: none;
   border: none;
+}
+
+#name {
+  float: left;
+  font-family: "Apfel Grotezk", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#initials {
+  display: none;
+}
+
+#projects,
+#cv,
+#about {
+  float: right;
+  padding-left: 2vw;
 }
 
 .tag {
@@ -122,7 +137,7 @@ button {
 
 /* proj-tag is for project disciplines/areas */
 #proj-tag {
-  font-weight: 200;
+  font-weight: 400;
   color: whitesmoke;
   background: var(--bg-grey);
 }
@@ -132,24 +147,6 @@ button {
   font-weight: 500;
   color: black;
   background: rgb(175, 175, 175);
-}
-
-#name {
-  float: left;
-  font-family: "Apfel Grotezk", sans-serif;
-  text-transform: uppercase;
-  font-weight: 200;
-}
-
-#initials {
-  display: none;
-}
-
-#projects,
-#cv,
-#about {
-  float: right;
-  padding-left: 2vw;
 }
 
 a {
@@ -276,7 +273,7 @@ h1 {
 
 h2 {
   font-family: "Apfel Grotezk", sans-serif;
-  /* font-weight: 200;
+  /* font-weight: 400;
   font-size: 1.5vw;
   line-height: 1.5vw; */
   float: right;
@@ -296,7 +293,7 @@ p {
   width: 47vw;
   /* float:left; */
   font-family: "Apfel Grotezk", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.3rem;
   letter-spacing: 0.01rem;
@@ -313,8 +310,8 @@ span {
 
 .credits {
   font-family: "Apfel Grotezk", sans-serif;
-  font-weight: 200;
-  font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 1rem;
   color: darkgrey;
   text-align: center;
   padding-top: 3vh;
@@ -681,43 +678,39 @@ input[type="checkbox"] {
   margin-bottom: 0;
 }
 
-/* ------------------------------------------ */
+/* ----------------------------------- */
 
-/* ------ ADD ANOTHER STYLE, IN BETWEEN STAGE IS AWKWARD....------ */
 /* ------------- WINDOW -------------- */
 
-@media screen and (max-width: 1500px) {
-  body {
-    background: yellow;
-  }
+@media screen and (max-width: 1200px) {
   .header-link {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 
   h2 {
     margin-top: 2vw;
   }
 
+  p {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+
   .tag {
-    font-size: 1.15rem;
+    font-size: 1rem;
     letter-spacing: 0.04rem;
     padding-left: 0.6em;
     padding-right: 0.6em;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
   }
-
-  p {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-  }
 }
 
-/* ------------------------------------------ */
+/* ----------------------------------- */
 
 /* ------------- MOBILE -------------- */
 
