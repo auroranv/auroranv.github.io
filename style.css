@@ -24,13 +24,13 @@ body {
 
 @font-face {
   font-family: "Apfel Grotezk";
-  font-weight: 200;
+  font-weight: 400;
   src: url(fonts/ApfelGrotezk-Regular.otf);
 }
 
 @font-face {
   font-family: "Apfel Grotezk";
-  font-weight: 400;
+  font-weight: 500;
   src: url(fonts/ApfelGrotezk-Mittel.otf);
 }
 
@@ -80,7 +80,9 @@ body {
   height: auto;
   width: auto;
   position: sticky;
-  display: flow-root;
+  /* display: flow-root; */
+  display: flex;
+  justify-content: space-between;
   background-color: var(--bg-grey);
   padding: 1vw;
   z-index: 100;
@@ -89,22 +91,25 @@ body {
 button {
 }
 
+.header-links-group {
+  /* width: auto;
+  height: auto; */
+  display: inline;
+}
+
 .header-link {
   font-family: "Apfel Grotezk", sans-serif;
   font-weight: 200;
-  /* font-size: 1.1vw; */
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   color: whitesmoke;
   background: none;
   border: none;
 }
 
-/* proj-tag is for project disciplines/areas */
-.proj-tag {
-  font-size: 1.3rem;
+.tag {
+  font-size: 1rem;
   letter-spacing: 0.06rem;
-  font-weight: 200;
   text-transform: uppercase;
   padding-left: 0.6em;
   padding-right: 0.6em;
@@ -112,25 +117,21 @@ button {
   padding-bottom: 0.2em;
   margin-left: 0.3vw;
   margin-right: 0.3vw;
-  background: var(--bg-grey);
   border-radius: 8rem;
 }
 
+/* proj-tag is for project disciplines/areas */
+#proj-tag {
+  font-weight: 200;
+  color: whitesmoke;
+  background: var(--bg-grey);
+}
+
 /* meta-tag is for metadata info, like the date, the fact that its a collection of projects etc */
-.meta-tag {
-  font-size: 1.3rem;
-  letter-spacing: 0.06rem;
-  font-weight: 400;
+#meta-tag {
+  font-weight: 500;
   color: black;
-  text-transform: uppercase;
-  padding-left: 0.6em;
-  padding-right: 0.6em;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  margin-left: 0.3vw;
-  margin-right: 0.3vw;
   background: rgb(175, 175, 175);
-  border-radius: 8rem;
 }
 
 #name {
@@ -139,6 +140,11 @@ button {
   text-transform: uppercase;
   font-weight: 200;
 }
+
+#initials {
+  display: none;
+}
+
 #projects,
 #cv,
 #about {
@@ -257,7 +263,7 @@ iframe {
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Apfel Grotezk", sans-serif;
   font-size: 2rem;
   line-height: 2rem;
@@ -274,7 +280,7 @@ h2 {
   font-size: 1.5vw;
   line-height: 1.5vw; */
   float: right;
-  color: whitesmoke;
+  /* color: whitesmoke; */
   display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
@@ -291,8 +297,9 @@ p {
   /* float:left; */
   font-family: "Apfel Grotezk", sans-serif;
   font-weight: 200;
-  font-size: 1.5rem;
-  line-height: 1.8rem;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.01rem;
   color: gainsboro;
   padding-left: 1vw;
   padding-right: 1vw;
@@ -695,15 +702,7 @@ input[type="checkbox"] {
     margin-top: 2vw;
   }
 
-  .proj-tag {
-    font-size: 1.15rem;
-    letter-spacing: 0.04rem;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-  }
-  .meta-tag {
+  .tag {
     font-size: 1.15rem;
     letter-spacing: 0.04rem;
     padding-left: 0.6em;
@@ -728,14 +727,19 @@ input[type="checkbox"] {
     left: 0;
     height: auto;
     width: auto;
-    position: sticky;
-    display: flow-root;
     padding: 2vw;
     z-index: 100;
   }
 
   .header-link {
     font-size: 0.9rem;
+  }
+  #name {
+    display: none;
+  }
+
+  #initials {
+    display: inherit;
   }
 
   h1 {
@@ -750,20 +754,8 @@ input[type="checkbox"] {
     /* flex-wrap: wrap; */
   }
 
-  .proj-tag {
-    font-size: 0.9rem;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    margin-left: 0.1em;
-    margin-right: 0.1em;
-    margin-top: 0.5em;
-    border-radius: 8rem;
-  }
-
-  .meta-tag {
-    font-size: 0.9rem;
+  .tag {
+    font-size: 0.8rem;
     padding-left: 0.6em;
     padding-right: 0.6em;
     padding-top: 0.25em;
@@ -775,8 +767,8 @@ input[type="checkbox"] {
   }
 
   p {
-    font-size: 1.1rem;
-    line-height: 1.2rem;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
     padding-left: 2vw;
     padding-right: 2vw;
     width: 94vw;
