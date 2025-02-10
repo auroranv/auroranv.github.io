@@ -235,6 +235,7 @@ iframe {
 video {
   transform: rotateX(180deg);
   /* margin-right: 10px; */
+  height: 60vh;
   margin-top: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -252,10 +253,25 @@ img {
   transform: rotateX(180deg);
 }
 
+.iframe-wrap {
+  /* background: yellow; */
+  object-fit: contain;
+  height: 60vh;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 iframe {
   height: 60vh;
+  width: 100vh;
+  /* height: 60vh; */
+  /* width: 800; */
+  /* height: 450; */
+  /* height: 100%; */
+  /* width: 100%; */
   object-fit: contain;
-  margin: 10px;
+  /* margin: 10px; */
   transform: rotateX(180deg);
 }
 
@@ -357,6 +373,26 @@ input[type="checkbox"] {
 }
 
 /* ~~~~~~~~ toggle IMAGE BACKGROUNDS ~~~~~~~~~~ */
+
+#tog24 {
+  background-image: url(images/vcd_0.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#tog24:hover {
+  /* background-image: none; */
+}
+
+#tog23 {
+  background-image: url(images/singapore_0.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#tog23:hover {
+  /* background-image: none; */
+}
 
 #tog22 {
   background-image: url(images/forecast_4.png);
