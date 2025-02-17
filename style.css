@@ -180,6 +180,7 @@ a.visited {
 ::-webkit-scrollbar {
   /* ---NOTE: for the rest of the scrollbar formatting to work, there has to be at least one attribute here under general scrollbar. */
   /* width: 2vh; */
+  -webkit-appearance: none;
   background-color: rgb(0, 0, 0);
   width: 8px;
   height: 8px;
@@ -214,6 +215,7 @@ a.visited {
   /* display: block; */
   display: flex;
   flex-direction: row;
+  gap: 20px;
   /* float: left; */
   overflow-x: scroll;
   overflow-y: hidden;
@@ -224,7 +226,7 @@ video {
   /* margin-right: 10px; */
   height: 60vh;
   margin-top: 20px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   margin-bottom: 20px;
   align-self: center;
 }
@@ -233,9 +235,10 @@ img {
   /* object-fit: cover; */
   object-fit: contain;
   height: 60vh;
+  padding-top: 0;
   /* margin: 10px; */
   margin-top: 20px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   margin-bottom: 20px;
   transform: rotateX(180deg);
 }
@@ -251,9 +254,10 @@ img {
 
 iframe {
   height: 60vh;
-  width: 100vh;
+  /* width: 100vw; */
+  aspect-ratio: 16 / 9;
   border: 0;
-  object-fit: contain;
+  /* object-fit: contain; */
   display: block;
   /* margin: 10px; */
   transform: rotateX(180deg);
@@ -263,7 +267,7 @@ h1 {
   font-weight: 500;
   font-family: "Apfel Grotezk", sans-serif;
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-align: left;
   /* color: #F06449; */
   color: whitesmoke;
@@ -276,11 +280,13 @@ h2 {
   /* font-weight: 400;
   font-size: 1.5vw;
   line-height: 1.5vw; */
-  float: right;
+  /* float: right; */
   /* color: whitesmoke; */
   display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
+  align-self: flex-end;
+  margin-left: auto;
 }
 
 .description {
@@ -325,32 +331,91 @@ input[type="checkbox"] {
 .wrap-collabsible {
   /* margin: 1.2rem 0;  */
   overflow-x: hidden;
+  /* background-color: white; */
 }
 
 .gradient {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     -30deg,
     rgba(35, 35, 35, 0.35) 20%,
     rgba(35, 35, 35, 0) 45%,
     rgba(35, 35, 35, 0) 68%,
     rgba(35, 35, 35, 0.35) 88%
-  );
-  padding: 1rem;
+  ); */
+  /* padding: 1rem; */
+  /* padding: 10px; */
   margin: 0;
   width: inherit;
-  height: inherit;
-  display: block;
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
-  transform: translate3d(0, 0, 0);
+  /* height: inherit; */
+  height: fit-content;
+  display: flex;
+  /* backdrop-filter: blur(30px); */
   align-content: center;
   /* border-radius: 7px; */
   /* mix-blend-mode: multiply; */
-  /* position: relative; */
+  position: relative;
+  z-index: 2;
+  justify-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.gradient:hover {
+/* .gradient:hover {
   backdrop-filter: none;
+} */
+
+.gradient::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* background-image: linear-gradient(
+    -40deg,
+    rgba(35, 35, 35, 0.35) 20%,
+    rgba(35, 35, 35, 0) 45%,
+    rgba(35, 35, 35, 0) 68%,
+    rgba(35, 35, 35, 0.35) 88%
+  ); */
+  background-image: linear-gradient(
+    -40deg,
+    rgba(50, 26, 26, 0.35) 20%,
+    rgba(50, 26, 26, 0) 45%,
+    rgba(50, 26, 26, 0) 68%,
+    rgba(50, 26, 26, 0.35) 88%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+.no-blur-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1.4rem;
+  z-index: 2;
+  /* top: 20px; */
+  height: min-content;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.blur-bg {
+  position: absolute;
+  /* height: 30vh; */
+  height: 150%;
+  width: 150%;
+  filter: blur(30px);
+  transition: filter 0.3s;
+  top: -25%;
+  left: -25%;
+}
+
+.blur-bg:hover {
+  filter: blur(0);
 }
 
 .lbl-toggle {
@@ -704,7 +769,9 @@ input[type="checkbox"] {
   .header-link {
     font-size: 1.1rem;
   }
-
+  .no-blur-wrap {
+    padding: 1.2rem;
+  }
   h1 {
     font-size: 2rem;
   }
@@ -751,6 +818,10 @@ input[type="checkbox"] {
 
   #initials {
     display: inherit;
+  }
+
+  .no-blur-wrap {
+    padding: 1rem;
   }
 
   h1 {
@@ -825,6 +896,18 @@ input[type="checkbox"] {
     margin: 0;
     padding-top: 20px;
     /* margin-top: 10px; */
+  }
+
+  .iframe-wrap {
+    height: 40vh;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  iframe {
+    height: 100%;
+    margin: 0;
+    /* padding-bottom: 20px; */
   }
 
   video {
