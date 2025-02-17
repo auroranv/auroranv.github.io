@@ -180,6 +180,7 @@ a.visited {
 ::-webkit-scrollbar {
   /* ---NOTE: for the rest of the scrollbar formatting to work, there has to be at least one attribute here under general scrollbar. */
   /* width: 2vh; */
+  -webkit-appearance: none;
   background-color: rgb(0, 0, 0);
   width: 8px;
   height: 8px;
