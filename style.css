@@ -412,6 +412,8 @@ input[type="checkbox"] {
   transition: filter 0.3s;
   top: -25%;
   left: -25%;
+  transform: translate3d(0, 0, 0);
+  transform: translateZ(0);
 }
 
 .blur-bg:hover {
