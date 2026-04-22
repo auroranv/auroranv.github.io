@@ -479,6 +479,15 @@ input[type="checkbox"] {
 }
 
 /* ~~~~~~~~ toggle IMAGE BACKGROUNDS ~~~~~~~~~~ */
+#tog26 {
+  background-image: url(images/mat_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#tog26:hover {
+  /* background-image: none; */
+}
 
 #tog25 {
   background-image: url(images/contestations_11.jpg);
