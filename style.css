@@ -405,15 +405,12 @@ input[type="checkbox"] {
 
 .blur-bg {
   position: absolute;
-  /* height: 30vh; */
   height: 150%;
   width: 150%;
   filter: blur(30px);
   transition: filter 0.3s;
   top: -25%;
   left: -25%;
-  /* transform: translate3d(0, 0, 0);
-  transform: translateZ(0); */
 }
 
 .blur-bg:hover {
@@ -479,8 +476,18 @@ input[type="checkbox"] {
 }
 
 /* ~~~~~~~~ toggle IMAGE BACKGROUNDS ~~~~~~~~~~ */
+#tog27 {
+  background-image: url(images/koske_00.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#tog27:hover {
+  /* background-image: none; */
+}
+
 #tog26 {
-  background-image: url(images/mat_1.png);
+  background-image: url(images/mat_000.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
